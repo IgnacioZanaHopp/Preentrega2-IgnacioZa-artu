@@ -1,0 +1,227 @@
+/* Define colores personalizados */
+:root {
+    --dark-green: #2e7d32;
+    --light-green: #81c784;
+    --gold: #ffb300;
+    --dark-gray: #424242;
+    --white: #ffffff;
+}
+
+/* Sobrescribir estilos de Bootstrap con la paleta de colores */
+.bg-dark-green {
+    background-color: var(--dark-green) !important;
+}
+
+.text-dark-green {
+    color: var(--dark-green) !important;
+}
+
+.btn-outline-dark-green {
+    color: var(--dark-green);
+    border-color: var(--dark-green);
+}
+
+.btn-outline-dark-green:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.bg-dark-gray {
+    background-color: var(--dark-gray) !important;
+}
+
+.text-dark-gray {
+    color: var(--dark-gray) !important;
+}
+
+/* Fuente personalizada */
+@font-face {
+    font-family: 'MiFuente';
+    src: url(../assets/The\ Wild\ Breath\ of\ Zelda.otf) format('opentype');
+}
+
+/* Reseteo básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo */
+body {
+    font-family: 'MiFuente';
+    margin: 0;
+    padding: 0;
+}
+
+/* Márgenes laterales */
+.container {
+    margin-left: 5cm;
+    margin-right: 5cm;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 20px;
+    text-align: center; /* Centra el contenido del encabezado */
+}
+
+/* Estilo para el título */
+header h1 {
+    margin: 0;
+    font-size: 3em; /* Aumenta el tamaño de la fuente del título */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+/* Estilo para la lista de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los elementos de la lista */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Estilo para los enlaces de la navegación */
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente de los enlaces */
+}
+
+/* Estilo para los enlaces al pasar el cursor */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la barra de búsqueda */
+nav ul li.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+}
+
+nav ul li.search-bar button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    background-color: #555;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+nav ul li.search-bar button:hover {
+    background-color: #777;
+}
+
+/* Estilo para el h2 */
+main h2 {
+    margin: 20px 0; /* Añade márgenes superior e inferior al h2 */
+    font-size: 2em; /* Aumenta el tamaño de la fuente del h2 */
+    line-height: 1.5;
+    color: #333;
+    text-align: center; /* Centra el h2 */
+}
+
+/* Estilo para la sección NES */
+.nes-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.video-caption {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.nes-text {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes */
+.imagen {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    max-width: 500px; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 20px auto; /* Centra la imagen horizontalmente y añade margen */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Añade un margen superior al pie de página */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente del pie de página */
+}
+
+/* Estilo para las listas de juegos */
+.games-list {
+    margin: 20px 0;
+}
+
+.games-list h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--dark-green);
+}
+
+.games-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.games-list ul li {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
